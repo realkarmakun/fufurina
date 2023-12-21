@@ -21,7 +21,13 @@ const columns = [{
 ]
 const selectedColumns = ref([...columns])
 
-const appList = []
+const appList = [{
+  appId: "APP001",
+  appName: 'App Name 1',
+  price: '20000',
+  defenseTactics: 'Tactic 1, Tactic 2',
+  action: 'Edit',
+}]
 </script>
 
 <template>

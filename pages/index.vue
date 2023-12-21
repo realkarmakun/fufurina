@@ -49,9 +49,8 @@ const appList = [{
     <div>
         <h2 className="text-xl font-semibold mb-4 p-4 mt-8">User Added Apps</h2>
         <div class="flex px-3 py-3.5 border-b border-gray-200 dark:border-gray-700">
-            <USelectMenu v-model="selectedColumns" :options="columns" multiple placeholder="Columns" />
+            <USelectMenu class="float-right click:bg-green-600" v-model="selectedColumns" :options="columns" multiple placeholder="Columns" />
         </div>
-        <UTable :rows="appList" :columns="selectedColumns" :sort="{ column: 'appName' }"
-        :empty-state="{ icon: 'i-heroicons-circle-stack-20-solid', label: 'No items.' }" class="w-full" />
+        <UTable :rows="appList" :columns="selectedColumns" :sort="{ column: 'appId' }" />
     </div>
   </template>
